@@ -21,7 +21,6 @@ public class UserViewModel extends AndroidViewModel {
     public UserViewModel(Application application) {
         super(application);
         userLiveData = new MutableLiveData<>();
-        fetchUser();
     }
 
     public LiveData<User> getUserLiveData() {
@@ -70,7 +69,7 @@ public class UserViewModel extends AndroidViewModel {
 
         @Override
         protected void onPostExecute(User user) {
-            userLiveData.postValue(user);
+            userLiveData.postValue(user); // Update MutableLiveData with the fetched data
         }
     }
 

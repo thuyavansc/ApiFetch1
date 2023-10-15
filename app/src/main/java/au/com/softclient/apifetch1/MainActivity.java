@@ -1,6 +1,7 @@
 package au.com.softclient.apifetch1;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
@@ -29,6 +30,10 @@ public class MainActivity extends AppCompatActivity {
                     nameTextView.setText("Name: " + user.getName());
                     emailTextView.setText("Email: " + user.getEmail());
                 }
+                else {
+                    Log.d("MainActivity", "User is null");
+                }
+                Log.d("MainActivity", "onChanged called");
             }
         });
     }
