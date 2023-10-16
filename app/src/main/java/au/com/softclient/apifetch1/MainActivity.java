@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         viewModel = new ViewModelProvider(this).get(UserViewModel.class);
 
+        // Update TextViews when LiveData changes
         viewModel.getUserLiveData().observe(this, new Observer<UserViewModel.User>() {
             @Override
             public void onChanged(UserViewModel.User user) {

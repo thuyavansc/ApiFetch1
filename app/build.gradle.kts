@@ -41,5 +41,9 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation("com.squareup.okhttp3:okhttp:4.9.1") // Use the latest version
     //implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.0")
+    //implementation(com.squareup.okhttp3:okhttp:4.9.1)
+    implementation ("org.java-websocket:Java-WebSocket:1.5.2")
+
+
 
 }
